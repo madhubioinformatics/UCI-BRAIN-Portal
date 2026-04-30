@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: "UCI BRAIN — Multi-omics Brain Disorder Portal"
+message: "If you use UCI BRAIN in your research, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Saddala"
+    given-names: "Madhu Sudhana"
+    affiliation: "UCI MIND Institute, Department of Neurobiology and Behavior, University of California, Irvine"
+  - family-names: "Swarup"
+    given-names: "Vivek"
+    affiliation: "UCI MIND Institute, Department of Neurobiology and Behavior, University of California, Irvine"
+    email: "vswarup@uci.edu"
+repository-code: "https://github.com/madhusaddala/UCI-BRAIN-Portal"
+url: "https://ucibrain.swaruplab.bio.uci.edu"
+abstract: >
+  UCI BRAIN is a comprehensive multi-omics brain disorder portal integrating
+  13 datasets, 31 neurological disorders, and 10 analysis modules into a
+  single interactive web interface. Modules include bulk RNA-seq, proteomics,
+  scRNA-seq, spatial transcriptomics, scATAC-seq, multi-omics integration,
+  ChIP/Hi-C, CellChat, AlphaGenome, and AI-powered result interpretation.
+keywords:
+  - brain disorders
+  - multi-omics
+  - bioinformatics portal
+  - Alzheimer's disease
+  - single-cell RNA-seq
+  - spatial transcriptomics
+  - differential expression
+  - neuroscience
+  - UMAP
+  - CellChat
+license: MIT
+version: "1.0.0"
+date-released: "2026-04-29"
