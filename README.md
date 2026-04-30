@@ -6,7 +6,7 @@
 
 **Developed by:** Madhu Sudhana Saddala and Vivek Swarup  
 **Institution:** UCI MIND Institute · Department of Neurobiology & Behavior · University of California, Irvine  
-**Contact:** vswarup@uci.edu  
+**Contact:** msaddala@uci.edu  
 **Portal URL:** https://madhubioinformatics.github.io/UCI-BRAIN-Portal/  
 
 ---
@@ -15,7 +15,7 @@
 
 **UCI BRAIN** (Brain Research Atlas and Integrative Network) is a comprehensive multi-omics interactive web portal for the neuroscience community. It integrates data across **13 large-scale cohorts**, **31 neurological and psychiatric disorders**, and **10 complementary analysis modules** — enabling researchers to query any human gene and instantly visualize its expression, regulation, and cell-type specificity across brain disorders.
 
-UCI BRAIN is designed to be the brain-disorder equivalent of UALCAN (cancer), but substantially more comprehensive — covering single-cell, spatial, epigenomic, and cell-communication data that no existing brain portal currently provides.
+UCI BRAIN is designed to be the brain-disorder substantially more comprehensive — covering single-cell, spatial, epigenomic, and cell-communication data that no existing brain portal currently provides.
 
 ---
 
