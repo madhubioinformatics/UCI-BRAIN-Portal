@@ -11,7 +11,7 @@ authors:
     affiliation: "UCI MIND Institute, Department of Neurobiology and Behavior, University of California, Irvine"
     email: "vswarup@uci.edu"
 repository-code: "https://github.com/madhusaddala/UCI-BRAIN-Portal"
-url: "https://ucibrain.swaruplab.bio.uci.edu"
+url: "https://madhubioinformatics.github.io/UCI-BRAIN-Portal/"
 abstract: >
   UCI BRAIN is a comprehensive multi-omics brain disorder portal integrating
   13 datasets, 31 neurological disorders, and 10 analysis modules into a
