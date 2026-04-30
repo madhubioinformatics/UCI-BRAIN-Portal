@@ -58,7 +58,7 @@ UCI BRAIN is designed to be the brain-disorder substantially more comprehensive 
 
 ## Live Demo
 
-🌐 **[https://madhusaddala.github.io/UCI-BRAIN-Portal](https://madhusaddala.github.io/UCI-BRAIN-Portal)**
+🌐 **[https://madhubioinformatics.github.io/UCI-BRAIN-Portal/](https://madhubioinformatics.github.io/UCI-BRAIN-Portal/)**
 
 > **⚠️ Data Status Notice:** The current live version uses **biologically realistic simulated data** parameterized from published effect sizes and summary statistics (sample sizes, fold changes, FDR thresholds) from the published literature. This allows full portal functionality to be demonstrated while real data integration is in progress.  
 >
