@@ -1,13 +1,13 @@
 # 🧠 UCI BRAIN — Multi-omics Brain Disorder Portal
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Portal](https://img.shields.io/badge/Portal-Live%20Demo-blue)](https://madhusaddala.github.io/UCI-BRAIN-Portal)
+[![Portal](https://img.shields.io/badge/Portal-Live%20Demo-blue)](https://madhubioinformatics.github.io/UCI-BRAIN-Portal/)
 [![GitHub Stars](https://img.shields.io/github/stars/madhusaddala/UCI-BRAIN-Portal?style=social)](https://github.com/madhusaddala/UCI-BRAIN-Portal)
 
 **Developed by:** Madhu Sudhana Saddala and Vivek Swarup  
 **Institution:** UCI MIND Institute · Department of Neurobiology & Behavior · University of California, Irvine  
 **Contact:** vswarup@uci.edu  
-**Portal URL:** https://ucibrain.swaruplab.bio.uci.edu  
+**Portal URL:** #https://ucibrain.swaruplab.bio.uci.edu  
 
 ---
 
@@ -58,7 +58,7 @@ UCI BRAIN is designed to be the brain-disorder equivalent of UALCAN (cancer), bu
 
 ## Live Demo
 
-🌐 **[https://madhusaddala.github.io/UCI-BRAIN-Portal](https://madhusaddala.github.io/UCI-BRAIN-Portal)**
+🌐 **[https://madhusaddala.github.io/UCI-BRAIN-Portal](https://madhubioinformatics.github.io/UCI-BRAIN-Portal/)**
 
 > **⚠️ Data Status Notice:** The current live version uses **biologically realistic simulated data** parameterized from published effect sizes and summary statistics (sample sizes, fold changes, FDR thresholds) from the published literature. This allows full portal functionality to be demonstrated while real data integration is in progress.  
 >
