@@ -215,9 +215,9 @@ If you use UCI BRAIN in your research, please cite:
   title     = {Multi-omics characterization of the human brain
                transcriptome in neurological disorders},
   author    = {Saddala, Madhu Sudhana and Swarup, Vivek},
-  journal   = {Nature Genetics},
+  journal   = {XXXXXXXX XXXXXXX},
   year      = {2026},
-  publisher = {Nature Publishing Group},
+  publisher = {XXXXXX Publishing Group},
   url       = {https://madhubioinformatics.github.io/UCI-BRAIN-Portal/},
   note      = {UCI MIND Institute, University of California Irvine}
 }
