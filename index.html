@@ -798,22 +798,45 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       <select class="gs" id="hd">
         <option value="all">All brain disorders</option>
         <optgroup label="Neurodegenerative">
-          <option value="AD">Alzheimer's disease</option><option value="PD">Parkinson's disease</option>
-          <option value="ALS">ALS</option><option value="HD">Huntington's disease</option>
-          <option value="FTD">Frontotemporal dementia</option><option value="LBD">Lewy body dementia</option>
-          <option value="MS">Multiple sclerosis</option><option value="PSP">PSP</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="NE">Normal elderly brain</option>
+          <option value="NL">Normal adult brain</option>
         </optgroup>
         <optgroup label="Brain Tumors">
-          <option value="GBM">Glioblastoma (GBM)</option><option value="LGG">Low-grade glioma</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
           <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
         </optgroup>
         <optgroup label="Psychiatric">
-          <option value="SCZ">Schizophrenia</option><option value="BPD">Bipolar disorder</option>
-          <option value="MDD">Major depression</option><option value="ASD">Autism spectrum</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
         </optgroup>
-        <optgroup label="Other">
-          <option value="STR">Stroke</option><option value="EPI">Epilepsy</option>
-          <option value="RTT">Rett syndrome</option><option value="DS">Down syndrome</option>
+        <optgroup label="Vascular &amp; Epilepsy">
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+        </optgroup>
+        <optgroup label="Developmental &amp; Genetic">
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </optgroup>
       </select>
       <select class="gs" id="hstat">
@@ -912,9 +935,11 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       <div class="attl" style="margin-bottom:6px">Brain disorder</div>
       <select class="ssel" id="sd">
         <option value="all">All disorders</option>
-        <optgroup label="Neurodegenerative"><option value="AD">Alzheimer's disease</option><option value="PD">Parkinson's disease</option><option value="ALS">ALS</option><option value="HD">Huntington's disease</option><option value="FTD">FTD</option><option value="LBD">Lewy body dementia</option><option value="MS">Multiple sclerosis</option></optgroup>
-        <optgroup label="Brain Tumors"><option value="GBM">Glioblastoma</option><option value="LGG">Low-grade glioma</option><option value="MED">Medulloblastoma</option></optgroup>
-        <optgroup label="Psychiatric"><option value="SCZ">Schizophrenia</option><option value="BPD">Bipolar disorder</option><option value="MDD">Major depression</option><option value="ASD">Autism spectrum</option></optgroup>
+        <optgroup label="Neurodegenerative"><option value="AD">Alzheimer&#39;s disease</option><option value="PD">Parkinson&#39;s disease</option><option value="ALS">ALS</option><option value="HD">Huntington&#39;s disease</option><option value="FTD">Frontotemporal dementia</option><option value="LBD">Lewy body dementia</option><option value="MS">Multiple sclerosis</option><option value="PSP">Progressive supranuclear palsy</option><option value="CBD">Corticobasal degeneration</option><option value="MCI">Mild cognitive impairment</option><option value="NE">Normal elderly</option><option value="NL">Normal adult</option></optgroup>
+        <optgroup label="Brain Tumors"><option value="GBM">Glioblastoma (GBM)</option><option value="LGG">Low-grade glioma</option><option value="MED">Medulloblastoma</option><option value="EPD">Ependymoma</option><option value="MEN">Meningioma</option></optgroup>
+        <optgroup label="Psychiatric"><option value="SCZ">Schizophrenia</option><option value="BPD">Bipolar disorder</option><option value="MDD">Major depression</option><option value="ASD">Autism spectrum</option><option value="ADHD">ADHD</option><option value="OCD">OCD</option><option value="PTSD">PTSD</option></optgroup>
+        <optgroup label="Vascular &amp; Epilepsy"><option value="STR">Stroke / Ischemia</option><option value="EPI">Epilepsy</option><option value="VD">Vascular dementia</option></optgroup>
+        <optgroup label="Developmental &amp; Genetic"><option value="RTT">Rett syndrome</option><option value="TSC">Tuberous sclerosis</option><option value="FX">Fragile X</option><option value="DS">Down syndrome</option></optgroup>
       </select>
       <div class="attl" style="margin-bottom:4px">Dataset</div>
       <select class="ssel" id="sds">
@@ -975,12 +1000,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="pd">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>ALS</option>
-          <option>MS</option>
-          <option>ASD</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Compartment</div>
@@ -1022,12 +1070,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="scd">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>ALS</option>
-          <option>MS</option>
-          <option>ASD</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Cell type</div>
@@ -1074,10 +1145,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="std">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>MS</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Brain region</div>
@@ -1120,12 +1216,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="atd">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>ALS</option>
-          <option>MS</option>
-          <option>ASD</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Analysis</div>
@@ -1176,11 +1295,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="mod">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>ALS</option>
-          <option>GBM</option>
-          <option>ASD</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Error bars</div>
@@ -1226,10 +1369,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="chipd">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>Normal</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Error bars</div>
@@ -1263,11 +1431,35 @@ body{font-family:var(--sans);background:var(--surf);color:var(--t1);line-height:
       </div>
       <div class="finp"><div class="attl">Disorder</div>
         <select class="ssel" style="margin:0;min-width:140px" id="ccd">
-          <option>Alzheimer's disease</option>
-          <option>Parkinson's disease</option>
-          <option>GBM</option>
-          <option>MS</option>
-          <option>ASD</option>
+          <option value="AD">Alzheimer&#39;s disease</option>
+          <option value="PD">Parkinson&#39;s disease</option>
+          <option value="ALS">ALS</option>
+          <option value="HD">Huntington&#39;s disease</option>
+          <option value="FTD">Frontotemporal dementia</option>
+          <option value="LBD">Lewy body dementia</option>
+          <option value="MS">Multiple sclerosis</option>
+          <option value="PSP">Progressive supranuclear palsy</option>
+          <option value="CBD">Corticobasal degeneration</option>
+          <option value="MCI">Mild cognitive impairment</option>
+          <option value="GBM">Glioblastoma (GBM)</option>
+          <option value="LGG">Low-grade glioma</option>
+          <option value="MED">Medulloblastoma</option>
+          <option value="EPD">Ependymoma</option>
+          <option value="MEN">Meningioma</option>
+          <option value="SCZ">Schizophrenia</option>
+          <option value="BPD">Bipolar disorder</option>
+          <option value="MDD">Major depression</option>
+          <option value="ASD">Autism spectrum</option>
+          <option value="ADHD">ADHD</option>
+          <option value="OCD">OCD</option>
+          <option value="PTSD">PTSD</option>
+          <option value="STR">Stroke / Ischemia</option>
+          <option value="EPI">Epilepsy</option>
+          <option value="VD">Vascular dementia</option>
+          <option value="RTT">Rett syndrome</option>
+          <option value="TSC">Tuberous sclerosis</option>
+          <option value="FX">Fragile X syndrome</option>
+          <option value="DS">Down syndrome</option>
         </select>
       </div>
       <div class="finp"><div class="attl">Analysis</div>

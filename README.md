@@ -6,16 +6,16 @@
 
 **Developed by:** Madhu Sudhana Saddala and Vivek Swarup  
 **Institution:** UCI MIND Institute · Department of Neurobiology & Behavior · University of California, Irvine  
-**Contact:** msaddala@uci.edu  
+**Contact:** vswarup@uci.edu  
 **Portal URL:** https://madhubioinformatics.github.io/UCI-BRAIN-Portal/  
 
 ---
 
 ## Overview
 
-**UCI BRAIN** (Brain Research Atlas and Integrative Network) is a comprehensive multi-omics interactive web portal for the neuroscience community. It integrates data across **13 large-scale cohorts**, **31 neurological and psychiatric disorders**, and **10 complementary analysis modules** — enabling researchers to query any human gene and instantly visualize its expression, regulation, and cell-type specificity across brain disorders.
+**UCI BRAIN** (Brain Research Atlas and Integrative Network) is a comprehensive multi-omics interactive web portal for the neuroscience community. It integrates data across **13 large-scale cohorts**, **31 neurological and psychiatric disorders** (12 neurodegenerative · 5 brain tumors · 7 psychiatric · 3 vascular · 4 developmental), and **10 complementary analysis modules** — enabling researchers to query any human gene and instantly visualize its expression, regulation, and cell-type specificity across brain disorders.
 
-UCI BRAIN is designed to be the brain-disorder substantially more comprehensive — covering single-cell, spatial, epigenomic, and cell-communication data that no existing brain portal currently provides.
+UCI BRAIN is designed to be the brain-disorder equivalent of UALCAN (cancer), but substantially more comprehensive — covering single-cell, spatial, epigenomic, and cell-communication data that no existing brain portal currently provides.
 
 ---
 
@@ -56,9 +56,25 @@ UCI BRAIN is designed to be the brain-disorder substantially more comprehensive 
 
 ---
 
+## Changelog
+
+### v1.1.0 — May 2026
+- ✅ All 31 brain disorders now visible in every module dropdown (was showing only 14–22)
+- ✅ Disorders organized into 5 categories: Neurodegenerative, Brain Tumors, Psychiatric, Vascular & Epilepsy, Developmental & Genetic
+- ✅ AI Assistant fixed — smart demo responses work without API key; live Claude AI enabled via ⚙ API Key button
+- ✅ EnhancedVolcano plots added to Bulk RNA-seq (Cell types tab) and scRNA-seq modules
+- ✅ Individual figure download (⬇) buttons on every chart card across all 10 modules
+- ✅ Proteomics module updated with box plots showing n= sample counts per compartment
+- ✅ UMAP and WNN UMAP individual downloads fixed (registry-based off-screen rendering)
+
+### v1.0.0 — April 2026
+- 🎉 Initial public release
+- 10 analysis modules, 31 brain disorders, 13 datasets
+- GitHub Pages deployment
+
 ## Live Demo
 
-🌐 **[https://madhubioinformatics.github.io/UCI-BRAIN-Portal/](https://madhubioinformatics.github.io/UCI-BRAIN-Portal/)**
+🌐 **[https://madhusaddala.github.io/UCI-BRAIN-Portal](https://madhusaddala.github.io/UCI-BRAIN-Portal)**
 
 > **⚠️ Data Status Notice:** The current live version uses **biologically realistic simulated data** parameterized from published effect sizes and summary statistics (sample sizes, fold changes, FDR thresholds) from the published literature. This allows full portal functionality to be demonstrated while real data integration is in progress.  
 >
@@ -215,9 +231,9 @@ If you use UCI BRAIN in your research, please cite:
   title     = {Multi-omics characterization of the human brain
                transcriptome in neurological disorders},
   author    = {Saddala, Madhu Sudhana and Swarup, Vivek},
-  journal   = {XXXXXXXX XXXXXXX},
+  journal   = {Nature Genetics},
   year      = {2026},
-  publisher = {XXXXXX Publishing Group},
+  publisher = {Nature Publishing Group},
   url       = {https://madhubioinformatics.github.io/UCI-BRAIN-Portal/},
   note      = {UCI MIND Institute, University of California Irvine}
 }
